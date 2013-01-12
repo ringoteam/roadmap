@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+	<div class="fallback-message">
+	    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+	    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+	</div>
+
+	<div id="impress">
+	    <div class="step slide" data-x="-1000" data-y="-1500">
+	        <q><b>Symfony2</b></q>
+	        <p> - Symfony2 est un framework Php 5 MVC libre</p>
+	      	<p> - Requiert Php 5.3.3 ou sup&eacute;rieur</p>
+	      	<p> - Programmation Orient&eacute; Objet</p>
+	      	<p> - Concept de "Bundle"</p>
+	      	<p> - Couche Mapping Objet Relationnel(ORM)</p>
+	      	<p> - Norme psr-0 et "best practices" Php</p>
+		      <br/>
+		      <p>Symfony2 a &eacute;t&eacute; mis en place pour la r&eacute;alisation du projet <strong>Op&eacute;ra Gallery Group.</strong></p>
+		      <p>Il s&rsquo;agit du premier projet Symfony2 au sein d&rsquo;<srong>Interakting.</strong></p>
+	    </div>
+	    <div class="step slide" data-x="0" data-y="-1500">
+	        <q><b>Force de Symfony2</b></q>
+	        <p> - Importante communaut&eacute; de d&eacute;veloppeurs.</p>
+	        <p> - La qualit&eacute; du code qui le rend tr&egrave;s adaptable et tr&egrave; flexible.</p>
+	        <p> - Structure du projet : s&eacute;paration entre application, configuration, web (MVC) et bundles</p>
+	        <p> - Injection de d&eacute;pendance</p>
+	        <p> - Dispatcheur d&rsquo;&eacute;venements</p>
+	        <p> - Le syst&egrave;me de "bundle"</p>
+	    </div>	
+			<div class="step slide" data-x="1000" data-y="-1500">
+	        <q><b>Bundles :</b></q>
+	        <p>Regrouper dans un m&ecirc;me endroit tout ce qui concerne une m&ecirc;me fonctionnalit&eacute;.</p>
+	        <br/>
+	        <p>De nombreux bundles ont &eacute;t&eacute; d&eacute;velopp&eacute;s et sont utilisables. Ils s&rsquo;impl&eacute;mentent de mani&egrave;re tr&egrave;s simple.</p>
+	        <br/>
+	        <p>Ainsi, des bundles sont pr&eacute;sent pour g&eacute;rer les utitlisateurs, une m&eacute;diath&egrave;que, la g&eacute;n&eacute;ration de pdf etc...</p>
+	        <p>La plupart des bundles sont disponibles sur <a href="http://knpbundles.com/">Knpbundles</a>.</p>
+	        <br/>
+	        <p>Le d&eacute;veloppement d&rsquo;un projet Symfony2 doit se faire en respectant cette structure de bundle.</p>
+	    </div>
+	</div>
+
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
