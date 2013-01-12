@@ -300,6 +300,18 @@ a:focus {
     line-height: 250px;
 }
 
+#big2 {
+    width: 600px;
+    text-align: center;
+    font-size: 60px;
+    line-height: 1;
+}
+
+#big2 b {
+    display: block;
+    font-size: 250px;
+}
+
 #big .thoughts {
     font-size: 90px;
     line-height: 150px;
