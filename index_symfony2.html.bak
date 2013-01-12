@@ -56,7 +56,7 @@
 	        <br/>
 	        <p>Le d&eacute;veloppement d&rsquo;un projet Symfony2 doit se faire en respectant cette structure de bundle.</p>
 	    </div>
-	    <div id="title" class="step slide" data-x="-1500" data-y="-500" data-rotate="180">
+	    <div id="title" class="step slide" data-x="-1500" data-y="-1500" data-rotate="180">
         <q><b>Apigen</b></q>
         <br/>
         <p>Apigen est une librairie de g&eacute;n&eacute;ration automatique de <strong>phpdoc</strong> pour Php 5.3.3 ou sup&eacute;rieur.</p>
