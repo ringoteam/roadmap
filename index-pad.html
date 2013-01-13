@@ -104,13 +104,14 @@
         
     -->
     <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
-       <q>Bilan et Roadmap 2013</q>
+       <q>Pôle Canal</q>
+       <q>Bilan 2012 et Roadmap 2013</q>
     </div>
     <div  class="step slide" data-x="0" data-y="-1500">
-       <q>Le renouveau de PHP</q>
+       <q>2012 une année de changement</q>
     </div>
     <div class="step slide" data-x="1000" data-y="-1500">
-        <p>depuis un an ou deux, un vent nouveau semble souffler sur PHP et sa communauté. De nouveaux outils, bibliothèques et frameworks, d’excellente qualité, émergent, rendant de nouveau le développement en PHP rapide, agréable et fiable – qualités qui avaient causé sa forte adoption à l’origine.</p>
+        <p>depuis un an un vent nouveau souffle sur PHP et sa communauté. De nouveaux outils, bibliothèques et frameworks, d’excellente qualité, émergent, rendant de nouveau le développement en PHP rapide, agréable et fiable – qualités qui avaient causé sa forte adoption à l’origine.</p>
         <br/>
         <p>Le langage en lui-même évolue, et de façon rapide et régulière : namespaces, fonctions anonymes (appelée closures en PHP), traits (semblables aux mixins en Ruby (5.4)).</p>
 
@@ -127,25 +128,30 @@
 
 
     <div class="step slide" data-x="3000" data-y="-1500">
-        <p>Composer est un gestionnaire de dépendances pour projet PHP, ressemblant fortement à npm sur node.js. Grâce à un fichier JSON, il est possible de spécifier ses dépendances et leurs versions de manière très simple et rapide.</p>
+        <p>Distribution</p><br/><br/>
+        <p><b>Composer<b> est un gestionnaire de dépendances pour projet PHP, ressemblant fortement à npm sur node.js. Grâce à un fichier JSON, il est possible de spécifier ses dépendances et leurs versions de manière très simple et rapide.</p><br/><br/><p> Son apparation est une révolution dans le monde php qui était le seul language sans système de packaging et de distribution fiable.</p>
         <pre>
-// composer.json
-{
-    "require": {
-        "monolog/monolog": "1.2.*",
-        "symfony/http-foundation": "v2.1.*"
-    }
-}
-        </pre>
-<p>
-
-<p>
-Un dépôt centralisé, Packagist, propose des zillions de packages, mais on peut également créer son propre repository grâce à Satis.</p>
-
     </div>
 
     <div class="step slide" data-x="4000" data-y="-1500">
-        <p>PHP The Right Way est un recueil de bonnes pratiques qui essaye de proposer une documentation facile à lire, permettant de donner les bonnes habitudes à tout nouveau développeur PHP, et fournissant une liste de ressources et de liens de qualité. Créé par Josh Lockhart, le projet est actif et compte de nombreuses contributions de la communauté.</p>
+        <p>bonnes pratiques</p><br/><br/>
+        <p>PHP The Right Way est un recueil de bonnes pratiques qui essaye de proposer une documentation facile à lire, permettant de donner les bonnes habitudes à tout nouveau développeur PHP, et fournissant une liste de ressources et de liens de qualité. Créé par Josh Lockhart, le projet est actif et compte de nombreuses contributions de la communauté.</p><br/><br/>
+        <p>A lire donc http://www.phptherightway.com/</p>
+    </div>
+
+    <div class="step slide" data-x="5000" data-y="-1500">
+        <p>La fin des frameworks ?</p><br><br>
+        <p>le manifeste MicroPHP  <a href="http://microphp.org/" target="_blank">http://microphp.org/</a></p><br/>
+        <p>en résumé on veut du code simple, réutilisable et interopérable<p><br/>
+        <p>avec les normes PSR les frameworks ne sont plus monolithique, il faut maintenant penser librairies/composants</p>
+    </div>
+
+    <div class="step slide" data-x="6000" data-y="-1500">
+        <p>En dehors de PHP...c'est l'année du javascript</p><br><br>
+        <p>La montée en puissance de nodeJS</p><br/>
+        <p>L' adoption de framework javascript *VC taillé pour des applications en ligne (Backbonne.js,Ember.js,Angular.js)<p><br/>
+        <p>De plus en plus d'architecture noSQL et/ou Cloud </p><br/>
+        <p>Et beaucoup d'autres choses dont nous aurons surement l'occasion de parler</p><br/>
     </div>
 
     <!--
@@ -179,12 +185,11 @@ Un dépôt centralisé, Packagist, propose des zillions de packages, mais on peu
     <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
         <span class="try">Ces Changements sur le pôle C+</span>
     </div>
-
-    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-        <p><b>Qualités & Documentation</b></p>
+    <div class="step slide" data-x="O" data-y="-3000">
+      <p>Qualité et Documentation</p>
     </div>
     <div class="step slide" data-x="O" data-y="-3000">
-        <p><b>Pourquoi ?</b></p>
+        <p><b>objectifs :</b></p>
         <br/>
         <ul>
             <li>maintenabilité</li>
@@ -211,16 +216,146 @@ Un dépôt centralisé, Packagist, propose des zillions de packages, mais on peu
     <div id="big2" class="step" data-x="9000" data-y="3000" data-rotate="180" data-scale="6">
         <p><b>Intégration Continue</b></p>
     </div>
-  
-
-     <div class="step slide" data-x="2000" data-y="-3000">
-        <p><b>L'expression Not Invented Here (littéralement « pas inventé ici ») désigne un syndrome dans une entreprise qui redéveloppe quelque chose qui existait déjà sous prétexte qu'elle n'a pas été conçue ou mise au point à l'intérieur de celle-ci.
+   <div class="step slide" data-x="2000" data-y="-3000">
+        <p><b>Mise en pratiques des évolutions du monde php et principes fondamentaux</b></p>
+    </div>
+     <div class="step slide" data-x="3000" data-y="-3000">
+        <p><b>Not Invented Here</b></p><br/><br/>
+        <p><b>L'expression Not Invented Here (littéralement « pas inventé ici ») <br/><br/>désigne un syndrome dans une entreprise qui redéveloppe quelque chose qui existait déjà sous prétexte qu'elle n'a pas été conçue ou mise au point à l'intérieur de celle-ci.<br/><br/>
 Ceci a notamment pour effet de diminuer l'interopérabilité des outils ainsi construits.</b></p>
     </div>
 
-    <div class="step slide" data-x="3000" data-y="-3000">
+    <div class="step slide" data-x="4000" data-y="-3000">
+        <p>KISS</p><br>
         <p><b>Keep it Simple, Stupid (en français, mot à mot : « Garde ça simple, stupide », dans le sens de « Ne complique pas les choses »), ou principe KISS, est une ligne directrice de conception qui préconise de rechercher la simplicité dans la conception et que toute complexité non nécessaire devrait être évitée.</b></p>
     </div>
+    <div class="step slide" data-x="5000" data-y="-3000">
+        <p>Notre temps de dévellopement est précieux et limité, ne cherchons pas à réinventer la roue mais plutôt a améliorer nos solutions <br/><br/>Github et packagist regorge de librairie et composant d'excelente qualité</p><br><br>
+        <p>ex: Ruler la librairie de gestion des profils pour mycanal la réimplémenter aurait representer 20+ de dev pour un résultat surement moins fiable</p>
+    </div>
+     <div class="step slide" data-x="-2000" data-y="-4000">
+        <p>Ces principes sur nos projets 2012<p>
+    </div>
+
+    <div class="step slide" data-x="-1000" data-y="-4000">
+        <q>Adoption de La norme PSR-0 (et 1) sur nos librairies</q>
+        
+        <p><br />Normalisation du code <br /><br />
+        Un standard dans le monde PHP <br /><br />
+        Facilite le chargement automatique par le nommage (fichier, classe, package) <br /><br />
+        Améliore la qualité du développement</p>
+    </div> 
+
+ 
+    <div class="step slide" data-x="0" data-y="-4000">
+        <q>Composer</q>
+        <p><br />Gestion de dépendances entre librairie <br /><br />
+        Un seul fichier à définir <br /><br />
+        Utilisé par tous les grands noms du PHP (Symfony, Zend, etc) <br /><br />
+        Facilite l'utilisation de librairies tiers</p>
+        
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="-4000">
+        <q>La librairie Itkg</q>
+        <p><br />Répond au besoin de factoriser notre travail ( Les copier / coller : C'EST LE MAL!!!) <br /><br />
+           Amélioration de la qualité du code<br /><br />
+        Itkg se base sur des librairies connues et éprouvées comme
+                Symfony 2, Zend 2 (LDAP / Mail), Guzzle (Rest), Validation<br /><br />
+                Un lien : <a href="http://github.com/itkg/itkg">http://github.com/itkg/itkg</a>
+            </p>
+    </div>
+    <div class="step slide" data-x="2000" data-y="-4000">
+        <q>Les outils à votre disposition</q>
+        <p><br />Gestion des appels Webservices (Soap / Rest) <br /><br />
+           Validation des formulaires et plus généralement de tout objet PHP<br /><br />
+           Gestion des logs et du monitoring <br /><br />
+           Gestion des batchs (normalisation et factorisation) <br /><br />
+           Gestion de l'envoi de mail, Connecteur LDAP<br /><br />
+           Bibliothèques d'Helper pour ne pas réinventer la roue!<br /><br />
+        </p>
+    </div>
+    <div class="step slide" data-x="3000" data-y="-4000">
+        <q>La librairie Canal</q>
+        <p><br />Un objectif : Centralisation et réutilisation<br /><br />
+           Plusieurs services déjà développés : <br /><br />
+            RCU, OVD, Orchestration, ATG / EPG, SIP, CGA
+           <br /></br>
+           Et d'autres arrivent : EAD, Eureka, etc
+           <br /><br />
+           Trois projets l'utilisent : Bourbon, MMF, My Canal<br /><br />
+           Objectifs 2013 : Infinity
+        </p>
+    </div> 
+    <div class="step slide" data-x="4000" data-y="-4000">
+        <q>Git</q>
+        <p><br />Un outil de versionning moderne (<a href="http://github.com">http://github.com</a>)<br /><br />
+           Utilisé par les plus grands noms du développement de tous les langages<br /><br />
+           Adopté par Canal+ pour les déploiements My Canal et avec l'objectif d'une possible généralisation
+           <br /></br>
+           Déjà mis en place sur nos projets : Le club, Infinity, Bourbon, MMF, My Canal, OGG, Canal-lib, Itkg<br /><br />
+        </p>
+    </div> 
+    <div class="step slide" data-x="5000" data-y="-4000">
+        <q>Git Flow</q>
+        <p><br />Des branches au secours de la TMA<br /><br />
+           Un modèle éprouvé<br /><br />
+        </p>
+    </div> 
+    <div class="step slide" data-x="6000" data-y="-4000">
+        <img src="images/gitflow.png" height="500"/>
+    </div> 
+    <div class="step slide" data-x="7000" data-y="-4000">
+        <b>Les autres nouveautés en bref</b>
+        <p><br />
+            SOLR : Le moteur de recherche d'Apache Lucene<br />
+             &nbsp;- Recherche Full-Text, Rich document<br />
+             &nbsp;- Implémenté sur Cuisine+<br /><br />
+            Redis : Base de données NO SQL<br />
+             &nbsp;- Système clé / valeur stockées dans la RAM<br />
+             &nbsp;- Gestion du cache<br />
+             &nbsp;- Implémenté sur My Canal<br /><br />
+            ActiveMQ : système de message Queuing<br />
+             &nbsp;- système de queue<br />
+             &nbsp;-  push/sub<br />
+             &nbsp;- Implémenté sur infinity,le club,MMF<br /><br />
+        </p>
+    </div>
+     <div class="step slide" data-x="-2000" data-y="-5000">
+        Un "petit" nouveau : Symfony2
+    </div>
+     <div class="step slide" data-x="-1000" data-y="-5000">
+            <q><b>Symfony2</b></q>
+            <p> - Symfony2 est un framework Php 5 MVC libre</p>
+            <p> - Requiert Php 5.3.3 ou sup&eacute;rieur</p>
+            <p> - Programmation Orient&eacute; Objet</p>
+            <p> - Concept de "Bundle"</p>
+            <p> - Couche Mapping Objet Relationnel(ORM)</p>
+            <p> - Norme <a href="#step-psr0"><strong>psr0</strong></a> et "best practices" Php</p>
+              <br/>
+              <p>Symfony2 a &eacute;t&eacute; mis en place pour la r&eacute;alisation du projet <strong>Op&eacute;ra Gallery Group.</strong></p>
+              <p>Il s&rsquo;agit du premier projet Symfony2 au sein d&rsquo;<srong>Interakting.</strong></p>
+        </div>
+        <div class="step slide" data-x="0" data-y="-5000">
+            <q><b>Force de Symfony2</b></q>
+            <p> - Importante communaut&eacute; de d&eacute;veloppeurs.</p>
+            <p> - La qualit&eacute; du code qui le rend tr&egrave;s adaptable et tr&egrave; flexible.</p>
+            <p> - Structure du projet : s&eacute;paration entre application, configuration, web (MVC) et bundles</p>
+            <p> - Injection de d&eacute;pendance</p>
+            <p> - Dispatcheur d&rsquo;&eacute;venements</p>
+            <p> - Le syst&egrave;me de "bundle"</p>
+        </div>  
+            <div class="step slide" data-x="1000" data-y="-5000">
+            <q><b>Bundles :</b></q>
+            <p>Regrouper dans un m&ecirc;me endroit tout ce qui concerne une m&ecirc;me fonctionnalit&eacute;.</p>
+            <br/>
+            <p>De nombreux bundles ont &eacute;t&eacute; d&eacute;velopp&eacute;s et sont utilisables. Ils s&rsquo;impl&eacute;mentent de mani&egrave;re tr&egrave;s simple.</p>
+            <br/>
+            <p>Ainsi, des bundles sont pr&eacute;sent pour g&eacute;rer les utitlisateurs, une m&eacute;diath&egrave;que, la g&eacute;n&eacute;ration de pdf etc...</p>
+            <p>La plupart des bundles sont disponibles sur <a href="http://knpbundles.com/">Knpbundles</a>.</p>
+            <br/>
+            <p>Le d&eacute;veloppement d&rsquo;un projet Symfony2 doit se faire en respectant cette structure de bundle.</p>
+        </div>
     <!--
         
         This element introduces rotation.
